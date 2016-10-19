@@ -90,7 +90,7 @@ export function findSystemAppPrefix (appName, callback) {
 /**
  * Async version of the same from electron-log.
  */
-function prepareDir (...args) {
+export function prepareDir (...args) {
   function result (isFile, callback) {
     if (res.argStack.length === 0) {
       return callback(new Error('could not prepare any directories'));
@@ -143,6 +143,6 @@ function prepareDir (...args) {
   return res;
 }
 
-function prepareFile (path, callback) {
+export function prepareFile (path, callback) {
   return prepareDir(path).fileResult(callback);
 }
