@@ -1,6 +1,11 @@
 # app-log-dir
 Node.js: get system-specific application logging directories. Supports Windows, Linux, Mac.
 
+In Node.js applications (CLI utilities, electron applications, ...) it is useful
+to get references to consistent, system-specific application logging paths.
+
+Inspired by [`electron-log`](https://github.com/megahertz/electron-log).
+
 # example
 ## Create a logger
 ```javascript
@@ -118,4 +123,4 @@ $ find-and-prepare-log-path MyAppName path to prefixed log file log.txt
 
 # License
 
-Released under MIT license.
+Released under MIT license. See LICENSE file.
