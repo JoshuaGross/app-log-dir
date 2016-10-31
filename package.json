@@ -1,6 +1,6 @@
 {
   "name": "app-log-dir",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js: get system-specific application logging directories. Supports Windows, Linux, Mac.",
   "main": "lib/index.js",
   "scripts": {

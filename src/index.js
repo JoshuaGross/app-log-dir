@@ -107,7 +107,8 @@ export function prepareDir (...args) {
 
         return touch(p, function (err) {
           if (!err) {
-            return fs.access(p, fs.constants.W_OK, function (err) {
+            const writeOkay = (fs.constants && fs.constants.W_OK || 2);
+            return fs.access(p, writeOkay, function (err) {
               if (!err) {
                 return callback(null, p);
               }
